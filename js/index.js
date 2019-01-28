@@ -126,6 +126,17 @@ ctaTitle.appendChild(ctaTitleP1);
 ctaTitle.appendChild(ctaTitleP2);
 ctaTitle.appendChild(ctaTitleP3);
 
+contactParag[0].textContent = "Somewhere, USA";
+const contactP1a = document.createElement('p');
+contactP1a.textContent = "123 Way 456 Street";
+contactParag[0].prepend(contactP1a);
+
+contactP1a.style.lineHeight = 0;
+
+
+//"Somewhere, USA";
+
+
 
 
 
