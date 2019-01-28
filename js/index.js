@@ -114,7 +114,7 @@ for (let i = 1; i<Object.keys(siteContent['contact']).length; i++) {
 
 copyright.textContent = siteContent['footer']['copyright']
 
-// Task 4: Add New Content
+// Task 4: Add New Content and Style
 ctaTitle.textContent = '';
 const ctaTitleP1 = document.createElement('p');
 ctaTitleP1.textContent = 'DOM';
@@ -133,10 +133,4 @@ contactParag[0].prepend(contactP1a);
 
 contactP1a.style.lineHeight = 0;
 
-
-//"Somewhere, USA";
-
-
-
-
-
+links.forEach(element => element.style.color = 'green');
