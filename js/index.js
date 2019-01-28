@@ -41,10 +41,15 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-// Task 2: Create DOM selectors
+// Task 2a: Create DOM selectors
 let links = Array.from(document.querySelectorAll('a'));
 
-// Task 2: Update image src's
+// Task 2b: Update image src's
+let ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 //Task 3: Update the HTML with JSON data
 for (let i=0; i < 6; i++) {
