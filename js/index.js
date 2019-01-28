@@ -76,8 +76,6 @@ for (let i=0; i < 6; i++) {
 
 ctaTitle.textContent = siteContent['cta']['h1'];
 
-console.log(ctaTitle.textContent)
-
 ctaButton.textContent = siteContent['cta']['button'];
 
 for (let i=0; i < topContentTitles.length; i++) { 
@@ -116,6 +114,17 @@ for (let i = 1; i<Object.keys(siteContent['contact']).length; i++) {
 
 copyright.textContent = siteContent['footer']['copyright']
 
+// Task 4: Add New Content
+ctaTitle.textContent = '';
+const ctaTitleP1 = document.createElement('p');
+ctaTitleP1.textContent = 'DOM';
+const ctaTitleP2 = document.createElement('p');
+ctaTitleP2.textContent = 'Is';
+const ctaTitleP3 = document.createElement('p');
+ctaTitleP3.textContent = 'Awesome';
+ctaTitle.appendChild(ctaTitleP1);
+ctaTitle.appendChild(ctaTitleP2);
+ctaTitle.appendChild(ctaTitleP3);
 
 
 
