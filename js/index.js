@@ -164,27 +164,36 @@ links.forEach(element => element.style.color = 'black');
 
 const cta = document.querySelector('.cta');
 cta.style.background = '#C2CAE8';
-cta.style.margin = '0'
-cta.style.paddingTop = '50px'
-cta.style.paddingBottom = '50px'
+cta.style.margin = '0';
+cta.style.paddingTop = '50px';
+cta.style.paddingBottom = '50px';
 
 const mainCont = document.querySelector('.main-content');
-mainCont.style.background = '#8380B6'
-mainCont.style.margin = '0'
+mainCont.style.background = '#8380B6';
+mainCont.style.margin = '0';
 
 const contact = document.querySelector('.contact');
-contact.style.background = '#C2CAE8'
-contact.style.margin = '0'
-contact.style.paddingTop = '30px'
-contact.style.paddingBottom = '20px'
-contact.style.display = 'flex'
-contact.style.justifyContent = 'space-evenly'
-contact.style.alignItems = 'center'
+contact.style.background = '#C2CAE8';
+contact.style.margin = '0';
+contact.style.paddingTop = '30px';
+contact.style.paddingBottom = '20px';
+contact.style.display = 'flex';
+contact.style.justifyContent = 'space-evenly';
+contact.style.alignItems = 'center';
 
-contactTitle.style.display = 'none'
+contactTitle.style.display = 'none';
 
 const footer = document.querySelector('footer');
-footer.style.background = '#8380B6'
-footer.style.margin = '0'
-footer.style.padding = '30px'
-footer.style.borderTop = '3px double black'
+footer.style.background = '#8380B6';
+footer.style.margin = '0';
+footer.style.padding = '30px';
+footer.style.borderTop = '3px double black';
+
+// Stretch Button
+ctaButton.addEventListener('click', function(){
+  ctaTitleP1.textContent = 'We';
+  ctaTitleP2.textContent = 'got';
+  ctaTitleP3.textContent = 'Started!';
+  ctaButton.textContent = 'Wooooooo!'
+});
+
