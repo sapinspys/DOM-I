@@ -134,3 +134,57 @@ contactParag[0].prepend(contactP1a);
 contactP1a.style.lineHeight = 0;
 
 links.forEach(element => element.style.color = 'green');
+
+const newLink1 = document.createElement('a');
+newLink1.textContent = "Team";
+links[0].appendChild(newLink1);
+newLink1.style.color = 'green'
+newLink1.style.marginLeft = '30px'
+
+const newLink2 = document.createElement('a');
+newLink2.textContent = "Home";
+links[0].prepend(newLink2);
+newLink2.style.color = 'green'
+newLink2.style.marginRight = '30px'
+
+// Stretch Styling
+const body = document.querySelector('body');
+body.style.background = '#C2CAE8'
+
+const header = document.querySelector('header');
+header.style.background = '#8789C0';
+header.style.paddingBottom = '30px';
+header.style.paddingLeft = '20px';
+header.style.paddingRight = '20px';
+header.style.borderBottom = '3px double black';
+
+newLink2.style.color = 'black';
+newLink1.style.color = 'black';
+links.forEach(element => element.style.color = 'black');
+
+const cta = document.querySelector('.cta');
+cta.style.background = '#C2CAE8';
+cta.style.margin = '0'
+cta.style.paddingTop = '50px'
+cta.style.paddingBottom = '50px'
+
+const mainCont = document.querySelector('.main-content');
+mainCont.style.background = '#8380B6'
+mainCont.style.margin = '0'
+
+const contact = document.querySelector('.contact');
+contact.style.background = '#C2CAE8'
+contact.style.margin = '0'
+contact.style.paddingTop = '30px'
+contact.style.paddingBottom = '20px'
+contact.style.display = 'flex'
+contact.style.justifyContent = 'space-evenly'
+contact.style.alignItems = 'center'
+
+contactTitle.style.display = 'none'
+
+const footer = document.querySelector('footer');
+footer.style.background = '#8380B6'
+footer.style.margin = '0'
+footer.style.padding = '30px'
+footer.style.borderTop = '3px double black'
